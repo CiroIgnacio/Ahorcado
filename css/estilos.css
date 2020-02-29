@@ -1,1 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
 
+* {
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	font-family: 'Staatliches';
+}
+
+
+.container {
+	width: 1200px;
+	height: 900px;
+	margin:0 auto;
+	background-image: url('../img/fondo.jpg');
+	background-size: cover;
+	border-radius: 20px;
+
+}
+.palabrasCont{
+	width: 900px;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.cajaLetra {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	margin-top: 250px;
+	margin-left:8px;
+	margin-right:8px;
+	width: 60px;
+	height: 70px;
+	box-sizing: border-box;
+
+}
+
+.abcCont {
+	width:920px;
+	height: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+}
+
+.letra {
+	display: inline-block;
+	visibility: hidden;
+	font-size: 30px;
+	color: black;
+	font-family: 'Staatliches';
+
+}
+
+.letra_abc {
+	width: 50px;
+	height: 50px;
+	margin:10px;
+	font-size: 35px;
+}
+
+
+.errorCont {
+	position: absolute;
+	top: 70px;
+
+	
+}
+
+.errorCont img {
+	width: 160px;
+	height: 160px;
+}
+
+.mensajeDerrota{
+	display: none;
+}
+
+.mensajeVictoria {
+	display: none;
+}
+.mensaje {
+	display: block;
+	text-align:center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 250px;
+	text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+	color: #9e9373;
+	font-size: 66px;
+	animation-name:cambiarColor;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+}
+
+.palabrasCont button {
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+	height: 50px;
+}
+
+.palabrasCont a {	
+	font-size: 20px;
+	text-decoration:none;
+	color: #000;
+
+}
+
+.palabrasCont p {
+	color: #fff;
+	font-size: 30px;
+}
+
+@keyframes cambiarColor {
+	from {
+		color:#9e9373;
+	}
+
+	to {
+		color:#5c1726;
+	}
+}
